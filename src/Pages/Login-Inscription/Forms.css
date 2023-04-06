@@ -1,0 +1,38 @@
+.pageForm{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px;
+  }
+  
+  .pageForm .avatar{
+    display: flex;
+    justify-content: center;
+  }
+  
+  .pageForm .button{
+    display: flex;
+    justify-content: end;
+  }
+  
+  .pageForm form{
+   
+    padding: 50px;
+  
+    
+  }
+  
+  .pageForm div{
+    margin-bottom: 15px;
+  }
+  
+  .pageForm .button{
+    display: flex;
+  }
+  
+  /* .pageForm .p-card{
+    background: none;
+  } */
+  
+  

@@ -1,0 +1,60 @@
+.concerts{
+    padding: 60px;
+}
+
+.concerts figure{
+    margin: 0;
+    margin-top: 20px;
+}
+
+.concerts button{
+    width: 183px;
+    height: 61px; 
+    background: #F1EEEB 0% 0% no-repeat padding-box;
+    border-radius: 23px;
+    text-align: center;
+    font-size: 27px;
+    letter-spacing: 0px;
+    color: #82DB76;
+}
+
+.concerts .first-list{
+    margin-bottom: 20px;
+}
+
+.concerts .second-list{
+    margin-bottom: 20px;
+}
+
+.concerts .display{
+    text-align: center;
+    background-color: #F1EEEB;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.concerts .display span:first-of-type{
+    text-transform: uppercase;
+    color: #82DB76;
+}
+
+.concerts ul li {
+    list-style: none;
+}
+
+.concerts figure img{
+    width: 100%;
+}
+
+@media screen and (max-width: 911px) {
+    .concerts button{
+        width: 120px;
+        height: 50px;
+        margin-left: 10px; 
+        
+    }
+}
+
+.display ul li {
+    padding: 10px;
+}

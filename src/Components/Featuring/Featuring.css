@@ -1,0 +1,86 @@
+.collaboration{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.collaboration figure{
+    display: block;
+    margin: 0;
+    border: 1px solid;
+    position: relative;
+    
+}
+
+.collaboration img{
+    display: block;
+    width: 300px;
+    height: 300px;
+    
+}
+
+.collaboration figcaption{
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    border: 1px solid;
+    height: 50%;
+    opacity: 0.7;
+    background-color: white;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.collaboration figure:hover figcaption{
+    display: flex;
+}
+
+.collaboration figcaption span{
+    display: block;
+    font-size: 26px;
+}
+
+.collaboration figcaption span:first-of-type{
+    margin-bottom: 10px;
+}
+
+.collaboration figcaption span:last-of-type{
+    display: flex;
+}
+
+.collaboration .feat{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.collaboration .audio{
+    
+    display: flex;
+   
+}
+
+.collaboration .audio progress{
+   
+    width: 80%;
+}
+
+.collaboration .preview{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+@media screen and (max-width: 897px) {
+    .collaboration {
+      
+    }
+
+    .collaboration .preview{
+        justify-content: flex-start;
+    }
+}

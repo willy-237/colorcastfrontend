@@ -1,0 +1,134 @@
+.quiestelle span{
+    display: block;
+    font-size: 45px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+}
+
+.quiestelle p{
+    padding: 10px;
+}
+
+.quiestelle .first-div{
+    display: flex;
+    
+}
+
+.quiestelle .first-span{
+    margin-left: 500px;
+}
+
+.quiestelle .second-span{
+    margin-right: 900px;
+}
+
+.quiestelle .third-span{
+    margin-left: 700px;
+}
+
+.quiestelle .fourth-span{
+    margin-right: 500px;
+}
+
+.quiestelle .span1{
+    justify-self: center;
+    margin-bottom: 10px;
+    font-size: 60px;
+    color: #82DC78;
+}
+
+.quiestelle .span2{
+    margin-left: 500px;
+}
+
+.quiestelle .span3{
+    margin-right: 700px;
+}
+
+.quiestelle .span4{
+    margin-left: 700px;
+}
+
+.quiestelle .span5{
+    margin-right: 500px;
+}
+
+.quiestelle .second-div{
+    display: flex;
+}
+
+@media screen and (max-width: 1300px) {
+    .quiestelle .first-span{
+        margin-left: 200px;
+    }
+    
+    .quiestelle .second-span{
+        margin-right: 700px;
+    }
+    
+    .quiestelle .third-span{
+        margin-left: 500px;
+    }
+    
+    .quiestelle .fourth-span{
+        margin-right: 300px;
+    }
+
+
+    .quiestelle .span2{
+        margin-left: 300px;
+    }
+
+    .quiestelle .span3{
+        margin-right: 500px;
+    }
+
+    .quiestelle .span4{
+        margin-left: 500px;
+    }
+
+    .quiestelle .span5{
+        margin-right: 300px;
+    }
+}
+
+@media screen and (max-width: 1022px){
+    .quiestelle .first-span{
+        margin-left: 0px;
+    }
+    
+    .quiestelle .second-span{
+        margin-right: 0px;
+    }
+    
+    .quiestelle .third-span{
+        margin-left: 0px;
+    }
+    
+    .quiestelle .fourth-span{
+        margin-right: 0px;
+    }
+
+
+    .quiestelle .span2{
+        margin-left: 0px;
+    }
+
+    .quiestelle .span3{
+        margin-right: 0px;
+    }
+
+    .quiestelle .span4{
+        margin-left: 0px;
+    }
+
+    .quiestelle .span5{
+        margin-right: 0px;
+    }
+
+    .quiestelle .first-div, .quiestelle .second-div{
+       flex-wrap: wrap;
+        
+    }
+}

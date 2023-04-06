@@ -1,0 +1,93 @@
+
+.pack{
+    display: flex;
+   
+}
+
+.p-carousel{
+    margin: 0 auto;
+    width: 100%;
+}
+
+.p-carousel-container{
+    width: 100%;
+}
+
+.pack img{
+    display: block;
+    width: 100%;
+}
+
+.pack-content{
+    display: flex;
+    justify-content: end;
+    width: 50%;
+}
+
+.pack-price{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+   text-align: center;
+}
+
+.pack-price *{
+    display: block;
+    margin-top: 20px;
+}
+
+.p-carousel-indicators button{
+    width: 15px !important;
+    height: 15px !important;
+    border-radius: 50% !important;
+}
+
+.p-carousel-indicator.p-highlight button{
+    background-color: #86e660 !important;
+}
+
+.pack-price span:first-of-type{
+    text-transform: uppercase;
+    font-size: 30px;
+}
+
+.pack-price span:nth-child(2){
+    font-size: 20px;
+}
+
+.pack-price span:nth-child(2)::first-letter{
+    text-transform: uppercase
+}
+
+.pack-price span:nth-child(3){
+    font-size: 30px;
+}
+
+.pack-price span:last-of-type{
+    text-transform: uppercase;
+    background-color: gray;
+    opacity: 0.3;
+    border-radius: 20px;
+    padding: 10px 20px;
+    color: #86e660;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 800px) {
+    .pack{
+        flex-direction: column;
+    }
+
+    .pack-content{
+        display: flex;
+        justify-content: end;
+        width: 100%;
+    }
+    
+    .pack-price{
+        width: 100%;
+    }
+  }

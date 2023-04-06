@@ -1,0 +1,150 @@
+.shopShirt{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.shopShirt header{
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    width: 100%;
+   
+}
+
+.shopShirt header h1 img{
+   width: 500px;
+}
+
+.shopShirt .main{
+    position: relative;
+    cursor: pointer;
+    display: flex;
+    
+}
+
+.shopShirt .main figure{
+    margin: 0;
+    
+
+}
+
+.shopShirt .main figure img{
+    width: 400px;
+    
+}
+
+
+
+.shopShirt .produit{
+    margin-top: 30px;
+    margin-left: 130px;
+}
+.shopShirt .article h2{
+    margin: 0;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.shopShirt .article span{
+    font-size: 22px;
+    margin-left: 50px;
+    
+}
+
+.shopShirt .details{
+    margin-top: 30px;
+}
+
+.shopShirt .details select{
+    
+    margin-top: 5px;
+    margin-bottom: 40px;
+}
+
+.shopShirt .details *{
+    margin-bottom: 10px;
+}
+
+.shopShirt .description *{
+    margin: 0;
+}
+
+.shopShirt .description h3 {
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+
+
+.shopShirt select{
+    display: block;
+}
+
+.shopShirt .main figure{
+    position: relative;
+    
+}
+
+.shopShirt .main figure svg{
+    display: none;
+    position: absolute;
+    width: 20px;
+    right: 20px;
+    top: 20px;
+   
+}
+
+
+.shopShirt .main:hover figure svg{
+    display: initial;
+}
+
+.p-card{
+    background: none;
+}
+
+.shopShirt .control{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.shopShirt .control button:first-of-type{
+    margin-left: 170px;
+}
+
+.shopShirt .control button:last-of-type{
+    margin-right: 170px;
+}
+
+.shopShirt header span svg{
+    width: 60px;
+   
+}
+
+.shopShirt header button{
+  position: relative;
+  bottom: 180px;
+  
+}
+
+.shopShirt header h1+span{
+    position: relative;
+    display: inline-block !important;
+    margin-right: 20px;
+}
+
+.shopShirt .p-badge{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.p-card-content .main{
+    align-items: center;
+}
+

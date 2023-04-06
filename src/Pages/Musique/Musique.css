@@ -1,0 +1,93 @@
+.cover{
+    border: 1px solid;
+}
+
+.cover figure{
+    margin: 0;
+    
+}
+
+.cover figure img{
+    display: block;
+    width: 100%;
+    
+}
+
+.cover p {
+    margin: 0;
+    text-align: center;
+    padding: 30px;
+    background-color: gray;
+    color: white;
+    font-size: 50px;
+}
+
+.musique{
+    max-width: 700px;
+    
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main figure{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+}
+
+main figure img {
+    width: 30%;
+    height: 50%;
+    margin-left: 40px;
+}
+
+main{
+    padding: 0;
+}
+
+main figure a{
+    color: black;
+     text-decoration: none;
+}
+
+main figure span{
+    border: 1px solid;
+     padding: 10px 30px;
+     border-radius: 30px;
+     font-weight: bold;
+     position: relative;
+     font-size: 25px;
+     margin-right: 40px;
+     z-index: 2;
+     cursor: pointer;
+}
+
+main figure span::after{
+    content: "";
+    position: absolute;
+    border-radius: 30px;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    z-index: -1;
+    transition-property: border-radius width;
+    transition-duration: 0.2s;
+}
+
+main figure span:hover::after{
+    width: 100%;
+    height: 100%;
+    background-color: #86e660;
+    color: white;
+}
+
+
+
+.p-card{
+    background: none;
+}

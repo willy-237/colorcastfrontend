@@ -1,0 +1,295 @@
+
+.headerComponent{
+  position: relative;
+  background-color: #82DC78;
+  height: 100vh;
+}
+
+.headerComponent svg{
+  cursor: pointer;
+}
+
+.headerComponent h1{
+  font-size: 0px;
+} 
+
+
+
+.headerComponent header{
+  height: 100%;
+}
+
+.headerComponent header figure{
+  margin: 0;
+}
+
+.headerComponent header h2{
+  margin: 0;
+}
+
+.headerComponent header nav{
+   display: flex;
+   justify-content: space-between;
+   
+}
+
+.headerComponent header nav svg{
+  width: 40px;
+}
+
+.headerComponent .main-nav{
+  padding: 0;
+  display: flex;
+
+}
+
+.headerComponent .main-nav a {
+  text-decoration: none;
+  color: #F1EEEB;
+}
+
+.headerComponent .main-nav li, .headerComponent .other-nav li{
+  list-style: none;
+  margin: 0 20px;
+}
+
+.headerComponent .other-nav{
+  display: flex;
+}
+
+
+
+.headerComponent .nav-musique{
+
+  display: flex;
+  height: 88.2vh;
+  background-image: url('assets/Aya-nakamura-cover-2.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-top: 20px;
+  position: relative;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.headerComponent .nav-musique figure img{
+  display: none;
+}
+
+.headerComponent .nav-musique .link-musique{
+  text-align: center;
+  color: #F1EEEB;
+  width: 100%;
+  margin-left: 500px;
+  position: relative;
+}
+
+.headerComponent .nav-musique .link-musique figure{
+  margin: 0;
+  margin-right: 80px;
+
+}
+
+.headerComponent .nav-musique .link-musique img{
+  width: 500px;
+
+
+}
+
+.headerComponent .nav-musique .link-musique a {
+  text-decoration: none;
+  display: inline-block;
+  border: 1px solid #707070;
+  border-radius: 40px;
+  text-align: center;
+  font-family: Poppins, sans-serif;
+  font-size: 20px;
+  letter-spacing: 0px;
+  padding: 10px 40px;
+  opacity: 1;
+  margin-top: 20px;
+  color: #F1EEEB;
+}
+
+.text-line {
+  stroke-dasharray: 500;
+  stroke-dashoffset: 500;
+  animation: dash 5s linear forwards, filling 5s ease-in forwards;
+  font-size: 80px;
+}
+
+.text-line text {
+  font-family: Poppins,sans-serif;
+  font-weight: normal;
+  font-style: normal;
+}
+
+.headerComponent input{
+  display: none;
+}
+
+.headerComponent .hamburger-lines{
+  display: none;
+}
+
+@keyframes dash {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes filling {
+  0%, 90% { fill: #F1EEEB; fill-opacity: 0; }
+  100% { fill: #F1EEEB; fill-opacity: 1; }
+}
+
+
+
+
+
+  @media screen and (max-width: 1058px) {
+    .headerComponent .nav-musique{
+      background: none;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+    }
+
+    .headerComponent .nav-musique figure img{
+      display: block;
+  
+    }
+
+    .headerComponent .nav-musique .link-musique{
+      margin-left: 0;
+    }
+
+  }
+
+  @media screen and (max-width: 700px){
+    .headerComponent .nav-musique .link-musique{
+      position: absolute;
+      bottom: 20%;
+    }
+  }
+
+
+@media screen and (max-width: 917px) {
+  .headerComponent header{
+    position: relative;
+  }
+
+  .headerComponent header nav{
+      height: 62px;
+      width: 100%;
+
+  }
+
+  .headerComponent .other-nav {
+    display: flex;
+    justify-content: end;
+    width: 100%;
+  }
+
+  .headerComponent header nav .hamburger-lines {
+    display: block;
+    height: 26px;
+    width: 32px;
+    position: absolute;
+    top: 17px;
+    left: 20px;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .headerComponent header nav .hamburger-lines .line {
+    display: block;
+    height: 4px;
+    width: 100%;
+    border-radius: 10px;
+    background: #F1EEEB;
+  }
+
+  .headerComponent header nav .menu-items {
+    padding-top: 120px;
+    height: 90vh;
+    width: 100vw;
+    transform: translate(-150%);
+    display: flex;
+    flex-direction: column;
+    margin-left: -40px;
+    padding-left: 50px;
+    text-align: center;
+    background-color: #82DC78;
+    position: absolute;
+    z-index: 1;
+  }
+
+  .headerComponent header nav .menu-items .menu-items li {
+    margin-bottom: 1.2rem;
+    font-size: 1.5rem;
+    font-weight: 500;
+  }
+  .headerComponent .checkbox {
+    position: absolute;
+    display: block;
+    height: 32px;
+    width: 32px;
+    top: 20px;
+    left: 20px;
+    z-index: 5;
+    opacity: 0;
+    cursor: pointer;
+  }
+
+  .headerComponent .hamburger-lines .line1 {
+    transform-origin: 0% 0%;
+    transition: transform 0.4s ease-in-out;
+  }
+
+  .headerComponent .menu-items li {
+    margin-bottom: 1.2rem;
+    font-size: 1.5rem;
+    font-weight: 500;
+  }
+
+  .headerComponent  .hamburger-lines .line2 {
+    transition: transform 0.2s ease-in-out;
+  }
+
+  .headerComponent .hamburger-lines .line3 {
+    transform-origin: 0% 100%;
+    transition: transform 0.4s ease-in-out;
+  }
+
+  input[type="checkbox"]:checked ~ nav .menu-items {
+    transform: translateX(0);
+  }
+
+  input[type="checkbox"]:checked ~ nav .hamburger-lines .line1 {
+    transform: rotate(45deg);
+  }
+
+  input[type="checkbox"]:checked ~ nav .hamburger-lines .line2 {
+    transform: scaleY(0);
+  }
+
+  input[type="checkbox"]:checked ~ nav .hamburger-lines .line3 {
+    transform: rotate(-45deg);
+  }
+
+  input[type="checkbox"]:checked ~ nav .other-nav{
+    display: none;
+  }
+
+  input[type="checkbox"]:checked ~ nav .other-nav{
+    display: none;
+  }
+
+  input[type="checkbox"]:checked ~ nav + .nav-musique{
+    display: none;
+  }
+}
+
